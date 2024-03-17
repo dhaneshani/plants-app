@@ -1,0 +1,10 @@
+<div class="header-container">
+  <div class="back-button-container"  *ngIf="headerData.backButtonEnabled" (click)="handleButtonClick()">
+    <i class="fas fa-arrow-left"></i>
+    <span>{{ headerData.backButtonDisplayText }}</span>
+  </div>
+  <div class="title-container">
+    <section class="main-title">{{ headerData.title }}</section>
+    <section class="sub-title" *ngIf="headerData.subTitle">{{ headerData.subTitle }}</section>
+  </div>
+</div>

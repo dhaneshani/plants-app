@@ -1,0 +1,32 @@
+<div class="grid-container">
+  <ng-container *ngFor="let plant of plants">
+      <div [routerLink] = "['/plants', plant.id]" class="card">
+        <section class="card-title" [title]="plant.name">
+          {{plant.name}}
+        </section>
+        <section class="card-body">
+          <section class="card-body-item">
+            {{plant.division}}
+          </section>
+          <section class="card-body-item">
+            {{plant.address}}
+          </section>
+          <section class="card-body-item">
+            {{plant.country}}
+          </section>
+        </section>
+      </div>
+  </ng-container>
+</div>
+<div class="button-container">
+  <ng-container *ngIf="checkIfMoreDataAvailable()">
+    <button (click)="loadMorePlants()" [disabled]="itemLoadingInProgress" class="btn-load-more">
+      <ng-container *ngIf="!itemLoadingInProgress">
+        Load More Results
+      </ng-container>
+      <ng-container *ngIf="itemLoadingInProgress">
+        Loading...
+      </ng-container>
+    </button>
+  </ng-container>
+</div>
