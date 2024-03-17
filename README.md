@@ -1,5 +1,9 @@
 # Please Follow Below Steps
 
+### prerequisites
+Please install the following version of Node before starting,
+Node: `v20.11.1`
+
 ### 1. Install Node Modules
 npm install
 
