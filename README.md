@@ -1,8 +1,9 @@
 # Please Follow Below Steps
 
 ### Prerequisites
+This project is generated with [Angular CLI] version 17.3.0.<br>
 Please install the following version of Node before starting.<br>
-Node Version : `v20.11.1`
+##### Node Version : `v20.11.1`
 
 ### 1. Install Node Modules
 npm install
