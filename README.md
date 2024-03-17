@@ -1,6 +1,6 @@
 # Please Follow Below Steps
 
-### prerequisites
+### Prerequisites
 Please install the following version of Node before starting,
 Node: `v20.11.1`
 
